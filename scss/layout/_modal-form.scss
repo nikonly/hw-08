@@ -1,0 +1,120 @@
+.form-title {
+  font-family: Roboto;
+  font-style: 700;
+  font-size: 20px;
+  line-height: 1.15;
+
+  text-align: center;
+  letter-spacing: 00.03em;
+  color: var(--title-text-color);
+
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.comment-text {
+  display: block;
+  resize: none;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+.form {
+  margin: 0;
+  padding: 40px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.form-field label,
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 0.01;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.form-field .form-input {
+  height: 40px;
+  margin: 0;
+  padding: 12px 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-field .policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 1.71;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 0.03;
+  color: #757575;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+}
+
+.policy-link {
+  color: #2196f3;
+}
+.submit .button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 56px;
+}
+.submit .button {
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.21);
+}
+.icon-black {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus + .icon-black {
+  fill: var(--accent-color);
+}
+
+.form-field:focus-within .form-input {
+  border: 1px solid var(--accent-color);
+}
+
+.checkbox:checked ~ .checkbox-icon .icon-checkbox {
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  background-size: contain;
+  background-origin: padding-box;
+  border-color: var(--accent-color);
+}
+.icon-checkbox {
+  display: block;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
